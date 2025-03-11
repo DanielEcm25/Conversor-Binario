@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="funcionalidades.js"></script>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>
+        Conversión de sistemas numéricos:
+    </title>
+    <meta charset="UTF-8">
+</head>
+<body style="text-align: center; background-color: rgb(160, 204, 201);">
+    <style>
+    p{
+        font-size: 17px;
+        max-width: 500px;
+        padding: 2px;
+        margin: auto;
+        margin-top: 10px;
+
+    }
+    </style>
+    <h1 style="color: blue;  background-color: aquamarine; font-size: 30px; max-width: 500px; font-family: 'Times New Roman', Times, serif; margin: auto; margin-top: 60px;">
+        Conversor de binario a caracter y de caracter a binario
+    </h1>
+    <br><br>
+    <h3 style="margin-top: 0;">Ingrese un caracter</h3>
+
+    <input type="text" id="caracter" placeholder="Carácter" autocomplete="off">
+
+    <input type="submit" value="Calcular" id="eje"  onclick="ejecutar('Caracter')">
+
+    <input type="submit" value="Borrar" id="del" onclick="borrar('Caracter')">
+
+    <p id="respuestaCar" class    ="parrafo" style="border: 3px solid  black; min-height: 20px;"> </p>
+    <br><br>
+    <h3 style="margin-top: 0;">Ingrese el número binario</h3>
+
+    <input type="text" autocomplete="off" id="binario" placeholder="Binario" style="margin: auto;">
+
+    <input type="submit" value="Calcular" id="ejeBin"  onclick="ejecutar('Binario')">
+
+    <input type="submit" value="Borrar" id="delBin" onclick="borrar('Binario')">
+
+    <p id="respuestaBinario" style="border: 3px solid  black; min-height: 20px;"> </p>
+</body>
+</html>
